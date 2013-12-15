@@ -81,3 +81,19 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+TEMPLATE_DIRS = (
+    '/home/mohammad/repos/platform/awd/templates',
+)
+
+
+# email setting
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'abaqualinc@gmail.com'
+EMAIL_HOST_PASSWORD = 'magnolia123'
+CONTACTUS_EMAIL = 'shared@abaqual.com'
+ORDERTOOL_EMAIL = 'shared@abaqual.com'
